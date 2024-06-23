@@ -25,6 +25,13 @@ body {
     left: 30%;
     z-index: 111;
     transition: 0.25s;
+    border: none;
+    background: none;
+    outline: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    cursor: pointer;
 }
 
 .check:before {
@@ -55,7 +62,7 @@ body {
 }
 
 .check:checked:after {
-    left: 25px;
+    transform: translateX(25px);
     border: 2px solid #ff2d88;
     transition: 0.25s;
 }
@@ -1005,10 +1012,15 @@ section {
     .about .container .info {
         padding: 20px;
         flex-direction: column;
+        align-items: center;
+        justify-content: center;
     }
 
     .about .container .info .info-image {
         margin-top: 5%;
+        margin-right: 0;
+        align-items: center;
+        justify-content: center;
     }
 
     .about .container .info .info-image img {
